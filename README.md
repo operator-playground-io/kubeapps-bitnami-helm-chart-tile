@@ -1,1 +1,1 @@
-# kubeapps-bitnami-helm-chart-tile
+# Kubeapps Helm-Chart
