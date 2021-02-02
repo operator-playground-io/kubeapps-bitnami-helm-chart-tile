@@ -1,26 +1,26 @@
 ---
-title: How to Uninstall WordPress chart 
-description: This tutorial explains how to Uninstall WordPress helm chart
+title: How to Uninstall Kubeapps Bitnami Helm Chart 
+description: This tutorial explains how to Uninstall Kubeapps Bitnami Helm Chart 
 ---
 
-### Uninstall WordPress Helm Chart and release the associated resources 
+### Uninstall Kubeapps Bitnami Helm Chart and release the associated resources 
 
-To uninstall the wordpress helm chart, use the helm delete command:
+To uninstall Kubeapps Bitnami Helm Chart, use the helm delete command:
 
 ```execute
-helm delete wordpress -n wordpress
+helm delete kubeapps -n kubeapps
 ```
 
 Output:
 
 ```
-release "wordpress" uninstalled
+release "kubeapps" uninstalled
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
 
 ```execute
-helm status wordpress -n wordpress
+helm status kubeapps -n kubeapps
 ```
 
 Output:
@@ -32,28 +32,7 @@ Error: release: not found
 - Delete the namespace :
 
 ```execute
-kubectl delete ns wordpress
-```
-
-- Delete the PersistentVolumes: 
-```execute
-kubectl delete -f /home/student/projects/Wordpress-Helm-Chart/mariadbpv.yaml
-```
-
-Output:
-
-```
-persistentvolume "mariadbpv" deleted
-```
-
-```execute
-kubectl delete -f /home/student/projects/Wordpress-Helm-Chart/wordpresspv.yaml
-```
-
-Output:
-
-```
-persistentvolume "wordpresspv" deleted
+kubectl delete ns kubeapps
 ```
 
 
