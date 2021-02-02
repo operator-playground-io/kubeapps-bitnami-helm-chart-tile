@@ -31,7 +31,7 @@
     },
     {
       "description": "Install the chart",
-      "exec": "helm install --name kubeapps --namespace kubeapps bitnami/kubeapps"
+      "exec": "helm install kubeapps --namespace kubeapps bitnami/kubeapps"
     }
    
   ],
