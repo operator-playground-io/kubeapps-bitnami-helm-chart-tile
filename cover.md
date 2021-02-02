@@ -4,7 +4,8 @@
 
 ### Overview
 
-Kubeapps is a web-based UI for deploying and managing applications in Kubernetes clusters. Unlike the Kubernetes dashboard, Kubeapps provides a central location for your applications and their full life-cycle.
+Kubeapps is a web application designed for deploying and managing applications in Kubernetes clusters. Unlike the Kubernetes dashboard, Kubeapps provides a central
+location for your applications and their full life-cycle. Using it, your cluster users can deploy applications packaged as Helm charts directly from their browsers.
 
 
 ### Kubeapps Kubeapps Bitnami Helm Chart's features are as follows:
