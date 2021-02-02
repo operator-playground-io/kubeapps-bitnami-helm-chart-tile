@@ -11,7 +11,7 @@
   "meta": {
     "Monitoring": ["Kubeapps"],
     "Type":[
-         "Chart"
+         "Helm"
       ],
     "Install time": ["20 minutes"]
   },
