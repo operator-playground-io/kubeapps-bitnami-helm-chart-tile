@@ -1,7 +1,7 @@
 {
   "name": " Kubeapps Helm Chart",
   "description": " Kubeapps Bitnami Helm Chart",
-  "logo": "_images/SalesStack.png",
+  "logo": "_images/logo.png",
   "has_supporting_content": true,
   "stack_id": " kubeapps",
   "type": "stack",
@@ -24,14 +24,7 @@
       "description": "Create Namespace",
       "exec": "kubectl create namespace kubeapps"
     },
-   {
-      "description": "Create hostpath for WordPress and MariaDB PVs",
-      "exec": "sudo mkdir -p /bitnami/mariadb/data && sudo mkdir -p /bitnami/wordpress/wp-content && sudo chmod -R 777 /bitnami" 
-    },
-    {
-      "description": "Clone and Prepare ",
-      "exec": "cd /home/student/projects && git clone https://github.com/aradhana14nov/Wordpress-Helm-Chart && cd Wordpress-Helm-Chart && kubectl create -f mariadbpv.yaml && kubectl create -f wordpresspv.yaml"
-    },
+  
     {
       "description": "Add Bitnami Repo",
       "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
