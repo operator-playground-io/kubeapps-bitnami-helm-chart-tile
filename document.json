@@ -31,7 +31,7 @@
     },
     {
       "description": "Install the chart",
-      "exec": "helm install kubeapps --namespace kubeapps --set service.type=NodePort bitnami/kubeapps"
+      "exec": "helm install kubeapps --namespace kubeapps --set frontend.service.type=NodePort bitnami/kubeapps"
     }
    
   ],
