@@ -4,7 +4,7 @@
   "logo": "_images/logo.png",
   "enabled": true,
   "category_label": [
-    "Operators"
+    "Helm"
   ],
   "document": "data-logging-stack",
   "stack_id": "kubeapps",
