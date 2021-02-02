@@ -7,19 +7,27 @@ description: This tutorial explains how to access Kubeapps Dashboard
 ### Access Kubeapps dashboard
 
 
-To obtain the application URL, wait until the pods are running.
 
+Step 1. Create a Kubernetes API token to access Kubeapps and Kubernetes:
 
-Kubeapps can be accessed via port 80 on the following DNS name from within your cluster:
+For any user-facing installation you should configure an OAuth2/OIDC provider to enable secure user authentication with Kubeapps and the cluster.
+Access to the Dashboard requires a Kubernetes API token to authenticate with the Kubernetes API server.
 
+Execute below command to create serviceaccount and cluster rolebinding:
+
+```execute
+kubectl create --namespace default serviceaccount kubeapps-operator
+kubectl create clusterrolebinding kubeapps-operator --clusterrole=cluster-admin --serviceaccount=default:kubeapps-operator
 ```
-kubeapps.kubeapps.svc.cluster.local
+
+NOTE It's not recommended to assign users the cluster-admin role for Kubeapps production usage. Please refer to the Access Control documentation to configure fine-grained access control for users.
+
+Step 2. Retrieve the token using below command:
+
+```execute
+kubectl get secret $(kubectl get serviceaccount kubeapps-operator -o jsonpath='{range .secrets[*]}{.name}{"\n"}{end}' | grep kubeapps-operator-token) -o jsonpath='{.data.token}' -o go-template='{{.data.token | base64decode}}' && echo
 ```
-
-To access Kubeapps from outside your K8s cluster, follow the steps below:
-
-
-1. Get the Kubeapps URL by running below commands:
+Step 3. Get the Kubeapps NODE_IP and NODE_PORT by running below commands:
 
 
 ```execute
@@ -29,7 +37,7 @@ To access Kubeapps from outside your K8s cluster, follow the steps below:
 ```
 
 
-2. Access kubeapps dashboard using the obtained URL by executing below command:
+Step 4. Access kubeapps dashboard using the obtained URL by executing below command:
 
 ```execute
 echo "Kubeapps URL: http://$NODE_IP:$NODE_PORT"
@@ -38,9 +46,46 @@ You should see your Kubeapps login page.
 
 Please see the below snapshot :
 
-![](_images/wordpress-site.PNG)
+![](_images/kubeapps-login-page.png)
 
-3. 
+Step 5: Paste the token generated in the previous Step 2 to authenticate and access the Kubeapps dashboard for Kubernetes.
+
+Step 6: Once you have the Kubeapps Dashboard up and running, you will see following on dashboard:
+
+Now You can start deploying applications into your cluster.
+
+Step 7: Use the “Catalog” option on the Dashboard to select an application from the list of charts in any of the configured Helm chart repositories. In this example we will deploy WordPress.
+
+Step 8: Enter "WordPress" in search box. You will see similar to following snapshot:
+
+Click on "Bitnami".
+
+You will see following page on dashboard.
+
+Step 9:Click on "Deploy" button.
+
+Step 10: You will see following page on dashboard. 
+
+
+Here we need to provide all the details in the Form like : Username, Password, Admin email, Blog Name,Persistent Volume Size, MariaDB Details,Service Type etc as shown in below snapshot.
+
+Step 11: Click on "Deploy V10.6.1".
+
+Step 12: You will see following page pn dashboard:
+
+Here you can see all the application details like : 
+- Pod status.
+- Access URL.
+- Cluster and namespace details.
+- Application Secrets
+- Application Resources Details.
+- Upgrade, Rollback and Delete option.
+
+
+Step 13: Access the application using Access URL provided by dashboard once pod is up and running.
+
+
+
 
 
 
