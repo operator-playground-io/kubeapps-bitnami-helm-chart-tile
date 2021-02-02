@@ -1,40 +1,52 @@
 {
-   "name":"WordPress Helm Chart Tutorial",
+   "name":"Kubeapps Helm Chart Tutorial",
    "appLayout":"accordion",
    "appTheme":"g90",
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":" A User Guide for WordPress Bitnami Helm Chart Installation",
-         "duration":"15 min",
-         "tutorial_name":"bitnami-helm-chart-installation.md",
-         "title":"How to Install WordPress Bitnami Helm Chart Tutorial"
+         "description":" A User Guide for Kubeapps Bitnami Helm Chart Installation",
+         "duration":"10 min",
+         "tutorial_name":"kubeapps-bitnami-helm-chart-installation.md",
+         "title":"1: How to Install Kubeapps Bitnami Helm Chart Tutorial"
       },
       {
          "description":" How to verify chart is installed successfully.",
          "duration":"5 min",
-         "tutorial_name":"verify-wordpress-chart-installation.md",
-         "title":"Verify Chart Installation is successful"
+         "tutorial_name":"verify-kubeapps-chart-installation.md",
+         "title":"2: Verify Chart Installation is successful"
       },
       {
-         "description":"How to access WordPress Console",
+         "description":"How to access Kubeapps dashboard",
          "duration":"5 min",
-         "tutorial_name":"access-wordpress-console.md",
-         "title":"Access Wordpress Console"
+         "tutorial_name":"access-kubeapps-console.md",
+         "title":"3: Access Kubeapps Console"
+      },
+      {
+         "description":"How To Create Your Own Chart Repository On Kubeapps",
+         "duration":"15 min",
+         "tutorial_name":"create-own-chart-repo.md",
+         "title":"4: Create Your Own Chart Repository"
       },
 
       {
-         "description":" Detail description of Configuration Parameters of WordPress Helm Chart",
+         "description":" Detail description of Configuration Parameters of Kubeapps Helm Chart",
          "duration":"30 min",
-         "tutorial_name":"configuration-parameters-of-wordpress-helm-chart.md",
-         "title":"Configuration Parameters of WordPress Helm Chart Tutorial"
+         "tutorial_name":"configuration-parameters-of-kubeapps-helm-chart.md",
+         "title":"5: Configuration Parameters of Kubeapps Helm Chart Tutorial"
+      },
+      {
+         "description":" How to upgrade Kubeapps Helm Chart Tutorial",
+         "duration":"30 min",
+         "tutorial_name":"upgrading-kubeapps.md",
+         "title":"6: Upgrade Kubeapps Helm Chart"
       },
       
       {
          "description":" How to uninstall Helm Chart",
          "duration":"5 min",
-         "tutorial_name":"uninstall-helm-chart.md",
-         "title":"Uninstall WordPress Helm Chart"
+         "tutorial_name":"uninstall-chart.md",
+         "title":"7: Uninstall Kubeapps Helm Chart"
       }
       
    ],
