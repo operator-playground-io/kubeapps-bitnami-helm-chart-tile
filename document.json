@@ -1,7 +1,7 @@
 {
   "name": " Kubeapps Helm Chart",
   "description": " Kubeapps Bitnami Helm Chart",
-  "logo": "_images/logo.png",
+  "logo": "_images/kubeapps-logo.png",
   "has_supporting_content": true,
   "stack_id": " kubeapps",
   "type": "stack",
