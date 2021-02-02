@@ -10,7 +10,7 @@
   "stack_id": "kubeapps",
   "type": "stack",
   "categories": [
-    "Deployment and Managing"
+    "Deploying and Managing"
   ],
   "is_certified": true,
   "has_support": true,
