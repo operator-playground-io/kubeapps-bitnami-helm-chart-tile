@@ -26,7 +26,7 @@ Steps:
 3. You will see following page on dashboard:
     
 
-We can also upgrade the Kubeapps helm chart by the following command:
+### Upgrade Kubeapps helm chart through commands on CLI:
 
 Steps:
 
@@ -35,6 +35,13 @@ Steps:
 ```execute
 helm repo update
 ```
+Output:
+```
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "bitnami" chart repository
+Update Complete. ⎈ Happy Helming!⎈ 
+```
+
 2. Now upgrade Kubeapps:
 
 ```execute
@@ -42,3 +49,4 @@ export RELEASE_NAME=kubeapps
 helm upgrade $RELEASE_NAME bitnami/kubeapps
 ```
 
+Note: If the current version of Kubeapps Helm chart is latest one, then this command may fail and give error.
