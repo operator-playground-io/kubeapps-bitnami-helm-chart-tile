@@ -9,9 +9,22 @@ You can upgrade Kubeapps from the Kubeapps web interface.
 
 Steps:
 
-1. Select the namespace in which Kubeapps is installed and 
-2. Click on the "Upgrade" button. 
-3. Select the new version and confirm.
+1. Click on "Applications" tab.You will see Kubeapps in deployed state.
+  - Select the namespace in which Kubeapps is installed.Here namespace should be "kubeapps".
+  - Click on Kubeapps application.
+  
+  Please refer following snapshot:
+
+  ![](_images/upgrade-kubeapps-option.png)
+  
+2. You will see following page on dashboard:
+  
+  ![](_images/kubeapps-upgrade.png)
+  
+  Click on the "Upgrade" button.
+  
+3. You will see following page on dashboard:
+    
 
 We can also upgrade the Kubeapps helm chart by the following command:
 
