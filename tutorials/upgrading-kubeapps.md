@@ -49,4 +49,4 @@ export RELEASE_NAME=kubeapps
 helm upgrade $RELEASE_NAME bitnami/kubeapps
 ```
 
-Note: If the current version of Kubeapps Helm chart is latest one, then this command may fail and give error.
+
