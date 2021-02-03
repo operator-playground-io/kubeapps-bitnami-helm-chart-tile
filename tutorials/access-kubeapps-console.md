@@ -21,7 +21,7 @@ kubectl create clusterrolebinding kubeapps-operator --clusterrole=cluster-admin 
 
 NOTE: It's not recommended to assign users the cluster-admin role for Kubeapps production usage. 
 
-Please refer to the https://github.com/kubeapps/kubeapps/blob/master/docs/user/access-control.md documentation to configure fine-grained access control for users.
+Please refer to following documentation to configure fine-grained access control for users: https://github.com/kubeapps/kubeapps/blob/master/docs/user/access-control.md 
 
 Step 2. Retrieve the token using below command:
 
@@ -29,7 +29,7 @@ Step 2. Retrieve the token using below command:
 kubectl get secret $(kubectl get serviceaccount kubeapps-operator -o jsonpath='{range .secrets[*]}{.name}{"\n"}{end}' | grep kubeapps-operator-token) -o jsonpath='{.data.token}' -o go-template='{{.data.token | base64decode}}' && echo
 ```
 
-Output of this command will be your token to access Kubeapps Dashboard.We are going to use this token in Step 5.
+Output will be token to access Kubeapps Dashboard.We will use this token in Step 5.
 
 Step 3. Get the Kubeapps NODE_IP and NODE_PORT by running below commands:
 
