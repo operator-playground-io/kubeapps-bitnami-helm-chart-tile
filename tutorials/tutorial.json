@@ -17,21 +17,21 @@
          "title":"2: Verify Chart Installation is successful"
       },
       {
-         "description":"How to access Kubeapps dashboard",
-         "duration":"5 min",
+         "description":"How to access Kubeapps Dashboard and deploy applications in cluster through Helm Charts.",
+         "duration":"15 min",
          "tutorial_name":"access-kubeapps-console.md",
-         "title":"3: Access Kubeapps Console"
+         "title":"3: Access Kubeapps Dashboard and deploy applications."
       },
       
       {
          "description":" Detail description of Configuration Parameters of Kubeapps Helm Chart",
-         "duration":"30 min",
+         "duration":"20 min",
          "tutorial_name":"configuration-parameters-of-kubeapps-helm-chart.md",
          "title":"5: Configuration Parameters of Kubeapps Helm Chart Tutorial"
       },
       {
          "description":" How to upgrade Kubeapps Helm Chart Tutorial",
-         "duration":"30 min",
+         "duration":"5 min",
          "tutorial_name":"upgrading-kubeapps.md",
          "title":"6: Upgrade Kubeapps Helm Chart"
       },
