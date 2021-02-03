@@ -52,7 +52,7 @@ Please see the below snapshot :
 ![](_images/kubeapps-login-page.PNG)
 
 
-Step 5: Paste the token generated in the previous step: Step 2 to authenticate and access the Kubeapps dashboard for Kubernetes.
+Step 5: Paste the token generated in the previous step: Step 2 to authenticate and access the Kubeapps dashboard for Kubernetes and click on "SUBMIT".
 
 ![](_images/token.png)
 
