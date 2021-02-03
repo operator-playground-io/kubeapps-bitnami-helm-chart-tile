@@ -12,7 +12,7 @@ Step 1. Create a Kubernetes API token to access Kubeapps and Kubernetes:
 For any user-facing installation you should configure an OAuth2/OIDC provider to enable secure user authentication with Kubeapps and the cluster.
 Access to the Dashboard requires a Kubernetes API token to authenticate with the Kubernetes API server.
 
-Execute below command to create serviceaccount and cluster rolebinding:
+Execute below command to create ServiceAccount and Cluster RoleBinding:
 
 ```execute
 kubectl create --namespace default serviceaccount kubeapps-operator
