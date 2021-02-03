@@ -19,7 +19,8 @@ kubectl create --namespace default serviceaccount kubeapps-operator
 kubectl create clusterrolebinding kubeapps-operator --clusterrole=cluster-admin --serviceaccount=default:kubeapps-operator
 ```
 
-NOTE It's not recommended to assign users the cluster-admin role for Kubeapps production usage. Please refer to the Access Control documentation to configure fine-grained access control for users.
+NOTE: It's not recommended to assign users the cluster-admin role for Kubeapps production usage. 
+Please refer to the https://github.com/kubeapps/kubeapps/blob/master/docs/user/access-control.md documentation to configure fine-grained access control for users.
 
 Step 2. Retrieve the token using below command:
 
