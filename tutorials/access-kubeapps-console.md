@@ -59,8 +59,10 @@ Step 6: Once you have the Kubeapps Dashboard up and running, you will see follow
 
 Now You can start deploying applications into your cluster.
 
+### Deploy applications using Helm Chart 
 
-Step 7: Use the “Catalog” option on the Dashboard to select an application from the list of charts in any of the configured Helm chart repositories. In this example we will deploy WordPress.
+
+Step 7: Use the “Catalog” option on the Dashboard to select an application from the list of charts in any of the configured Helm chart repositories. In this example we will deploy WordPress using Bitnami Helm Chart.
 
 ![](_images/catalog.png)
 
