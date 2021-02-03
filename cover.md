@@ -8,7 +8,7 @@ Kubeapps is a web application designed for deploying and managing applications i
 location for your applications and their full life-cycle. Using it, your cluster users can deploy applications packaged as Helm charts directly from their browsers.
 
 
-### Kubeapps Kubeapps Bitnami Helm Chart's features are as follows:
+### Kubeapps Bitnami Helm Chart's features are as follows:
 
 - Browse and deploy Helm charts from chart repositories
 - Inspect, upgrade and delete Helm-based applications installed in the cluster
