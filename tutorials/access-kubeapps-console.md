@@ -45,7 +45,7 @@ You should see your Kubeapps login page.
 
 Please see the below snapshot :
 
-![](_images/kubeapps-login-page.png)
+![](_images/kubeapps-login-page.PNG)
 
 
 Step 5: Paste the token generated in the previous Step 2 to authenticate and access the Kubeapps dashboard for Kubernetes.
