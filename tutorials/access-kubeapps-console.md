@@ -20,6 +20,7 @@ kubectl create clusterrolebinding kubeapps-operator --clusterrole=cluster-admin 
 ```
 
 NOTE: It's not recommended to assign users the cluster-admin role for Kubeapps production usage. 
+
 Please refer to the https://github.com/kubeapps/kubeapps/blob/master/docs/user/access-control.md documentation to configure fine-grained access control for users.
 
 Step 2. Retrieve the token using below command:
@@ -82,21 +83,21 @@ You will see following page on dashboard.
 ![](_images/deploy-chart-wordpress.png)
 
 
-Step 9:Click on "Deploy" button.
+Click on "Deploy" button.
 
 
-Step 10: You will see following page on dashboard. 
+Step 9: You will see following page on dashboard. 
 
 ![](_images/config.png)
 
 Here we need to provide all the details on the Form like : Username, Password, Admin email, Blog Name,Persistent Volume Size, MariaDB Details,Service Type etc as shown in below snapshot.
 
-Step 11: Click on "Deploy V10.6.1".
+Step 10: Click on "Deploy V10.6.1".
 
 ![](_images/deploy-button.png)
 
 
-Step 12: You will see following page on dashboard:
+Step 11: You will see following page on dashboard:
 
 ![](_images/installation-details-status.png)
 
@@ -109,9 +110,9 @@ Here you can see all the application details like :
 - Upgrade, Rollback and Delete option.
 
 
-Step 13: Access the application using Access URL provided by dashboard once pod is up and running.
+Step 12: Access the application using Access URL provided by dashboard once pod is up and running.
 
-Step 14: Once the pod is up and running, your chart is installed successfully.
+Step 13: Once the pod is up and running, your chart is installed successfully.
 Now you can use "Upgrade" button to upgrade the chart version.
 You can use "Rollback" option to Rollback the chart version previous to upgraded version.
 Also you can use the "Delete" Button to delete the WordPress from the cluster.
