@@ -27,28 +27,28 @@
          "description":" Detail description of Configuration Parameters of Kubeapps Helm Chart",
          "duration":"20 min",
          "tutorial_name":"configuration-parameters-of-kubeapps-helm-chart.md",
-         "title":"5: Configuration Parameters of Kubeapps Helm Chart Tutorial"
+         "title":"4: Configuration Parameters of Kubeapps Helm Chart Tutorial"
       },
       {
          "description":" How to upgrade Kubeapps Helm Chart Tutorial",
          "duration":"5 min",
          "tutorial_name":"upgrading-kubeapps.md",
-         "title":"6: Upgrade Kubeapps Helm Chart"
+         "title":"5: Upgrade Kubeapps Helm Chart"
       },
       
       {
          "description":" How to uninstall Helm Chart",
          "duration":"5 min",
          "tutorial_name":"uninstall-chart.md",
-         "title":"7: Uninstall Kubeapps Helm Chart"
+         "title":"6: Uninstall Kubeapps Helm Chart"
       }
       
    ],
    "usefulLinks":[
       {
-         "title":"WordPress Helm Chart",
-         "description":"WordPress Bitnami Helm Chart",
-         "url":"https://bitnami.com/stack/wordpress/helm"
+         "title":"Kubeapps Helm Chart",
+         "description":"Kubeapps Bitnami Helm Chart",
+         "url":"https://bitnami.com/stack/kubeapps/helm"
       }
    ]
 }
