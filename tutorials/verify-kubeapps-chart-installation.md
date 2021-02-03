@@ -33,6 +33,7 @@ kubeapps-postgresql-primary-0                                1/1     Running   0
 kubeapps-postgresql-read-0                                   1/1     Running   0          55s
 ```
 
+Note:Please wait till all Pod STATUS will be "Running" and then proceed further.
 
 
 ### Check all the Kubernetes resources status
