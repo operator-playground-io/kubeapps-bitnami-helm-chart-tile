@@ -32,8 +32,7 @@ In this tutorial,we are going to cover following topics:
 - How to Install Kubeapps Bitnami Helm Chart and verify its successful installation.
 - Verify status of pods and services. 
 - Configurable parameters of the Kubeapps Bitnami Helm Chart and their default values.
-- How to access Kubeapps Console.
-- Using the Kubeapps Dashboard.
+- How to access Kubeapps Dashboard and deploy applications in cluster through Helm Charts.
 - Upgrading Kubeapps.
 - Uninstall Kubeapps Helm Chart and release resources.
 
