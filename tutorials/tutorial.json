@@ -22,13 +22,7 @@
          "tutorial_name":"access-kubeapps-console.md",
          "title":"3: Access Kubeapps Console"
       },
-      {
-         "description":"How To Create Your Own Chart Repository On Kubeapps",
-         "duration":"15 min",
-         "tutorial_name":"create-own-chart-repo.md",
-         "title":"4: Create Your Own Chart Repository"
-      },
-
+      
       {
          "description":" Detail description of Configuration Parameters of Kubeapps Helm Chart",
          "duration":"30 min",
