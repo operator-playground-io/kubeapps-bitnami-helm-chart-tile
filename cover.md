@@ -8,7 +8,7 @@ Kubeapps is a web application designed for deploying and managing applications i
 location for your applications and their full life-cycle. Using it, your cluster users can deploy applications packaged as Helm charts directly from their browsers.
 
 
-### Kubeapps Bitnami Helm Chart's features are as follows:
+### Features of Bitnami Kubeapps Helm Chart
 
 - Browse and deploy Helm charts from chart repositories
 - Inspect, upgrade and delete Helm-based applications installed in the cluster
@@ -29,12 +29,12 @@ Kubeapps can be used with the following Kubernetes services:
 
 In this tutorial,we are going to cover following topics:
 
-- How to Install Kubeapps Bitnami Helm Chart and verify its successful installation.
-- Verify status of pods and services. 
-- Configurable parameters of the Kubeapps Bitnami Helm Chart and their default values.
-- How to access Kubeapps Dashboard and deploy applications in cluster through Helm Charts.
-- Upgrading Kubeapps.
-- Uninstall Kubeapps Helm Chart and release resources.
+- Install Kubeapps Bitnami Helm Chart and verify its successful installation.
+- Verify the status of pods and services. 
+- Describe configurable parameters of the Kubeapps Bitnami Helm Chart and their default values.
+- Access Kubeapps dashboard and deploy applications in the cluster through Helm Charts.
+- Upgrade the Kubeapps.
+- Uninstall Kubeapps Helm Chart and release the resources.
 
 
 
