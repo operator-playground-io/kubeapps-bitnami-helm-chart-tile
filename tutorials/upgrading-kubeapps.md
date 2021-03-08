@@ -3,46 +3,43 @@ title: Upgrade Kubeapps  Tutorial
 description: This tutorial explains how to upgrade Kubeapps Bitnami Helm Chart
 ---
 
-### Upgrade Kubeapps from Kubeapps web interface
+### Upgrade Kubeapps from Kubeapps Web Interface
 
 You can upgrade Kubeapps from the Kubeapps web interface. 
 
-Steps:
+**Step 1: Click on "Applications" tab. You will see Kubeapps in deployed state.**
 
-1. Click on "Applications" tab.You will see Kubeapps in deployed state.
-  - Select the namespace in which Kubeapps is installed.Here namespace should be "kubeapps".
-  - Click on Kubeapps application.
-  
-  Please refer following snapshot:
+ - Select the namespace in which Kubeapps is installed. Here, namespace should be "kubeapps".
 
-  ![](_images/upgrade-kubeapps-option.png)
+ - Click on Kubeapps application.
+
+Please refer following snapshot.
+
+![](_images/upgrade-kubeapps-option.png)
+
   
-2. You will see following page on dashboard:
+**Step 2: Click on the "Upgrade" button. You will see following page on dashboard:**
   
-  ![](_images/kubeapps-upgrade.png)
-  
-  Click on the "Upgrade" button.
-  
-3. You will see following page on dashboard:
+  ![](_images/kubeapps-upgrade.png)  
     
 
-### Upgrade Kubeapps helm chart through commands on CLI:
+### Upgrade Kubeapps Helm Chart through Commands on CLI:
 
-Steps:
-
-1. Update your local chart repository :
+Step 1: Update your local chart repository.
 
 ```execute
 helm repo update
 ```
-Output:
+
+This should display something like below.
+
 ```
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "bitnami" chart repository
 Update Complete. ⎈ Happy Helming!⎈ 
 ```
 
-2. Now upgrade Kubeapps:
+Step 2: Now upgrade the Kubeapps.
 
 ```execute
 export RELEASE_NAME=kubeapps
