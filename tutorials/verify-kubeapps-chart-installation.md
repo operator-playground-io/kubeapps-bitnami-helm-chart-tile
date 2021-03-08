@@ -1,21 +1,22 @@
 ---
 title: Verify Kubeapps Chart Installation
-description: This tutorial explains how to verify that Kubeapps chart installed successfully
+description: Learn how to verify that Kubeapps chart has been installed successfully.
 ---
 
 
-Once the helm chart installation done we need to verify all the pods and services are up and running.
+Once the helm chart installation is complete, we need to verify that all the pods and services are up and running.
 
-Execute below command to check status of pods and services: 
 
-### Check the pod status
+### Check the Status of Operator Pod
+
+Execute below command to check status of pods and services.
 
 
 ```execute
 kubectl get pods --namespace kubeapps
 ```
 
-You will see similar to this output:
+You will see some output as shown below.
 
 ```
 NAME                                                         READY   STATUS    RESTARTS   AGE
@@ -33,12 +34,12 @@ kubeapps-postgresql-primary-0                                1/1     Running   0
 kubeapps-postgresql-read-0                                   1/1     Running   0          55s
 ```
 
-Note:Please wait till all Pod STATUS will be "Running" and then proceed further.
+Note: Please wait for the Pod STATUS to be "Running", and then proceed further.
 
 
-### Check all the Kubernetes resources status
+### Check the Status of Kubernetes Resources
 
-You can run the following command to know status of all the deployed resources inside the namespace kubeapps
+You can run the following command to know status of all the deployed resources inside the namespace `kubeapps`.
 
 
 ```execute
