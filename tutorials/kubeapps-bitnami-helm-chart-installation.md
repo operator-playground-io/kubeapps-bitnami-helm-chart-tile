@@ -1,22 +1,22 @@
 ---
-title: Kubeapps Bitnami Helm Chart Installation Tutorial
-description: This tutorial explains how we Installed Kubeapps Bitnami Helm Chart
+title: Kubeapps Bitnami Helm Chart Installation.
+description: Learn how to install Kubeapps Bitnami Helm Chart.
 ---
 
 ### Install Kubeapps Bitnami Helm Chart
 
-This tutorial is made just to describe what all steps are actually being performed behind the Kubeapps Chart "Install" button and is just for knowledge perspective.
-Please do not execute these manually if you already installed the Kubeapps Helm Chart using "Install" button. 
+This tutorial describes what all steps are performed in the background, when you click on "Install" button. Please do not execute these manually if you have already installed the Kubeapps Helm Chart using "Install" button
 
-We have followed following steps to install Kubeapps Bitnami Helm Chart :
 
-Step 1: Create a namespace : "kubeapps". 
+Follow the below steps to install Kubeapps Bitnami Helm Chart.
+
+**Step 1: Create a namespace: "kubeapps".**
 
 ```
 kubectl create namespace kubeapps
 ```
 
-output:
+Output:
 
 ```
 namespace/kubeapps created
@@ -26,26 +26,25 @@ namespace/kubeapps created
 
 Step 2: Add ‘bitnami' to your repo list:
 
-Command:
 
 ```
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
-you should see the following output:
+You should see the following output.
 
 ```
 "bitnami" has been added to your repositories
 ```
 
 
-Step 3:  Command for Kubeapps Helm Chart installation:
+**Step 3: Execute the following command for Kubeapps Helm Chart installation.**
 
 ```
 helm install kubeapps --namespace kubeapps --set frontend.service.type=NodePort bitnami/kubeapps
 ```
 
-output:
+This should produce the below output.
 
 ```
 NAME: kubeapps
