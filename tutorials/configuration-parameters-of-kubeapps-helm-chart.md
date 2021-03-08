@@ -1,16 +1,16 @@
 ---
 title: Configuration Parameters of Kubeapps Bitnami Helm Chart
-description: This tutorial explains about Configuration Parameters
+description: Describe Configuration Parameters for Kubeapps Helm chart.
 ---
 
 
 
-### Configuration Parameters of Kubeapps Helm Chart
+### Configuration Parameters for Kubeapps Helm Chart
 
 
-TheKubeapps Helm Chart can be customized by specifying configurable Parameters while installing the chart. 
+The Kubeapps Helm Chart can be customized by specifying configurable Parameters while installing the chart. 
 
-The detailed description of these lists of configurable parameters for Kubeapps Helm chart with their default values per section/component can be checked at "Parameters" Section of following link:
+See Parameters section for the detailed description of these configurable parameters for Kubeapps Helm chart with their default values per section/component.
 
 https://github.com/bitnami/charts/tree/master/bitnami/kubeapps#parameters
 
